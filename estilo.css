@@ -1,0 +1,130 @@
+
+#Nombre {
+text-align: center;    
+color: #3d9eff;
+font-size :45px; ;
+}
+
+.contenedor {
+    text-align: center;
+    color: rgb(0, 49, 118);
+    font-family: "Syne", sans-serif;
+}
+
+.boton {
+    font-family: 'Syne', sans-serif;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.boton:hover {
+    background-color: #005bb5;
+}
+
+.recuadros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.recuadro {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 300px; 
+    max-width: 100%;
+    margin: 10px;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.recuadro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.recuadro-titulos {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0, 91, 181); 
+    color: #fff;
+    padding: 10px;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+}
+
+.recuadro-video {
+    width: 100%; 
+    max-width: 800px; 
+    margin: 20px auto; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative; 
+}
+
+.recuadro-video video {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.recuadro-video .recuadro-titulos {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0, 91, 181); 
+    color: #fff;
+    padding: 10px;
+    border-radius: 0 0 20px 20px; 
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .recuadro {
+        width: 100%;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contenedor {
+    animation: fadeInUp 0.5s ease-in-out;
+    animation-delay: 0.2s; 
+    animation-fill-mode: both; }
+
+.recuadro {
+    animation: fadeInUp 0.7s ease-in-out;
+    animation-delay: 0.3s; 
+    animation-fill-mode: both; }
+
+    .recuadro-video {
+        animation: fadeInUp 0.8s ease-in-out;
+        animation-delay: 0.5s; 
+        animation-fill-mode: both; }
+    
